@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: cadetblue;
+  min-height: 100vh;
+  min-width: 30vw;
+}
+.header {
+  position: sticky;
+  grid-area: header;
+  background-color: blue;
+  min-height: 15vh;
+  display: block;
+}
+.chat {
+  position: relative;
+  grid-area: chat;
+  background-color: gray;
+  min-height: 70vh;
+}
+.footer {
+  position: sticky;
+  grid-area: footer;
+  background-color: blueviolet;
+  min-height: 15vh;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "sidebar sidebar header header header header"
+    "sidebar sidebar chat chat chat chat"
+    "sidebar sidebar footer footer footer footer";
+}
+.conversa {
+  margin: 1em 0;
+  border: 2px red solid;
+}
+
+.perfil {
+  background-color: pink;
+  min-height: 15vh;
+  display: block;
+}
+.mensagem {
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 20%;
+  position: relative;
+  max-width: 50vw;
+  justify-content: right;
+  text-align: start;
+  border: 3px solid green;
+}
+.mensagem p {
+  align-self: flex-end;
+}
+.footer input {
+  width: 70%;
+  height: 3vh;
+  margin-top: 3vh;
+  margin-left: 2vw;
+  border: 0px;
+  border-radius: 20px;
+  padding: 20px 50px;
+}
+
+.header h2 {
+  position: relative;
+  display: inline;
+  text-align: left;
+  bottom: 3vh;
+  left: 5%;
+}
+
+.header img {
+  margin-top: 12px;
+  margin-left: 1em;
+  width: auto;
+  height: 10vh;
+  display: inline;
+  border-radius: 100%;
+}
+
+.sidebar h2 {
+  position: relative;
+  display: inline;
+  text-align: left;
+  bottom: 3vh;
+  left: 5%;
+}
+
+.header img {
+  margin-top: 12px;
+  margin-left: 1em;
+  width: auto;
+  height: 10vh;
+  display: inline;
+  border-radius: 100%;
+}
+
+.sidebar img {
+  margin-top: 12px;
+  margin-left: 1em;
+  width: auto;
+  height: 10vh;
+  display: inline;
+  border-radius: 100%;
+}
