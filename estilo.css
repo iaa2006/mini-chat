@@ -48,14 +48,13 @@ body {
   display: block;
 }
 .mensagem {
-  inset-inline-start: 30%;
   display: inline-block;
   margin-top: 2%;
-  max-width: 50vw;
-  position: relative;
-  justify-content: right;
+  margin-right: 2%;
+  max-width: 40vw;
   text-align: start;
   border: 3px solid green;
+  float: right;
 }
 .mensagem p {
   align-self: flex-end;
