@@ -14,8 +14,27 @@ body {
   min-height: 15vh;
   display: block;
 }
+.cm1 {
+  justify-self: end;
+}
+.mensagem1 {
+  grid-area: mensagem1;
+  padding: 0px 5px;
+  margin-top: 2%;
+  margin-right: 2%;
+  max-width: 40vw;
+  text-align: start;
+  border: 3px solid green;
+  width: auto;
+  min-width: 10%;
+}
+
+.mensagem2 {
+  grid-area: mensagem2;
+  grid-row: 1/1;
+}
 .chat {
-  display: flex;
+  display: grid;
   position: relative;
   grid-area: chat;
   background-color: gray;
@@ -23,7 +42,6 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   max-height: 70vh;
-  align-items: flex-start;
 }
 .footer {
   position: sticky;
@@ -48,20 +66,7 @@ body {
   min-height: 15vh;
   display: block;
 }
-.mensagem1 {
-  align-self: flex-end;
-  padding: 0px 5px;
-  margin-top: 2%;
-  margin-right: 2%;
-  max-width: 40vw;
-  text-align: start;
-  border: 3px solid green;
-  min-width: 10%;
-}
 
-.mensagem p {
-  align-self: flex-end;
-}
 .footer input {
   width: 70%;
   height: 3vh;
